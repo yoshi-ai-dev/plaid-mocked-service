@@ -4,6 +4,8 @@
 
 The service is intended to be the provided upstream dependency for the exercise. Candidates build the Cloudflare-facing application; this repo supplies realistic account, balance, transaction, and webhook behavior.
 
+For the full take-home exercise prompt, see [`PROMPT.md`](./PROMPT.md).
+
 ## Important Note
 
 This repository is a helper artifact for the take-home exercise. It does **not** reflect Yoshi's production coding standards or repository conventions.
