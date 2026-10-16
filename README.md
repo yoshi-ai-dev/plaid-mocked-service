@@ -2,7 +2,7 @@
 
 `plaidMockedService` is a standalone TypeScript mock upstream for the Yoshi full-stack exercise.
 
-The service is intended to be the provided upstream dependency for the exercise. Candidates build the Cloudflare-facing application; this repo supplies realistic account, balance, transaction, and webhook behavior.
+The service is intended to be the provided upstream dependency for the exercise. Candidates build the application that ingests from it; this repo supplies realistic account, balance, transaction, and webhook behavior.
 
 For the full take-home exercise prompt, see [`PROMPT.md`](./PROMPT.md).
 
@@ -107,6 +107,8 @@ Request:
 Resets an item back to its initial sync frame.
 
 ## Local Development
+
+This mock runs locally as a Cloudflare Worker through [Wrangler](https://developers.cloudflare.com/workers/wrangler/), which `pnpm install` installs for you. No Cloudflare account is needed. That is only how the mock is packaged: your own application should be a standard Node.js service, as the exercise describes.
 
 ```bash
 pnpm install
